@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import React from 'react';
 import {  Layout,  theme } from 'antd';
 import ProtectedRoute from './components/layout/ProtectedRoute';
@@ -27,6 +27,7 @@ const App: React.FC = () => {
   } else if (currentUser?.role === 'faculty') {
     sidebarItems = sidebarItemsGenerator(facultyPaths, 'faculty');
   } else if (currentUser?.role === 'student') {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     sidebarItems = sidebarItemsGenerator(studentPaths, 'student');
   }
 
