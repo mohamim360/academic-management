@@ -3,10 +3,10 @@ import {
   useAddMarkMutation,
   useGetAllFacultyCoursesQuery,
 } from '../../redux/features/faculty/facultyCourses.api';
-import { Button, Modal, Table, TableColumnsType } from 'antd';
+import { Button, Modal, Table } from 'antd';
 import { useState } from 'react';
 import PHForm from '../../components/form/PHForm';
-import PHSelect from '../../components/form/PHSelect';
+
 import PHInput from '../../components/form/PHInput';
 
 const MyStudents = () => {
@@ -53,7 +53,7 @@ const MyStudents = () => {
     {
       title: 'Action',
       key: 'x',
-      render: (item) => {
+      render: (item: any) => {
         return (
           <div>
             <AddMarksModal studentInfo={item} />

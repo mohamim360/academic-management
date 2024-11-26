@@ -16,7 +16,7 @@ const MyCourses = () => {
     value: item.semesterRegistration._id,
   }));
   
-  const courseOptions = facultyCoursesData?.data?.map((item) => ({
+  const courseOptions = facultyCoursesData?.data?.map((item: any) => ({
     label: item.course.title,
     value: item.course._id,
   }));

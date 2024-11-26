@@ -78,29 +78,15 @@ const Login = () => {
               type="text"
               name="userId"
               label="User ID"
-              style={{
-                marginBottom: '16px',
-              }}
-              inputStyle={{
-                borderRadius: '8px',
-                borderColor: '#E0E0E0',
-                backgroundColor: '#F9F9F9',
-                color: '#000',
-              }}
+           
+          
             />
             <PHInput
               type="password"
               name="password"
               label="Password"
-              style={{
-                marginBottom: '16px',
-              }}
-              inputStyle={{
-                borderRadius: '8px',
-                borderColor: '#E0E0E0',
-                backgroundColor: '#F9F9F9',
-                color: '#000',
-              }}
+            
+            
             />
             <Button
               htmlType="submit"

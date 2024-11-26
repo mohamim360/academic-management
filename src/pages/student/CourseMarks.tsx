@@ -1,6 +1,6 @@
 import { useGetAllEnrolledCoursesQuery } from '../../redux/features/student/studentCourseManagement.api';
 import { Card, Row, Col, Typography, Divider, Table } from 'antd';
-import { BookOutlined, ScheduleOutlined, UserOutlined } from '@ant-design/icons';
+import { BookOutlined, UserOutlined } from '@ant-design/icons';
 
 const { Title, Text } = Typography;
 
@@ -34,7 +34,7 @@ const CourseMarks = () => {
 
   return (
     <div style={{ padding: '20px' }}>
-      {data?.data?.map((item) => (
+      {data?.data?.map((item:any) => (
         <Card key={item._id} style={{ marginBottom: '20px' }} hoverable>
           <Row gutter={16}>
             {/* Course Title */}

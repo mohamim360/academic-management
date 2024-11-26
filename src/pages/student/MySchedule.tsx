@@ -10,7 +10,7 @@ const MySchedule = () => {
 
   return (
     <div style={{ padding: '20px' }}>
-      {data?.data?.map((item) => (
+      {data?.data?.map((item : any) => (
         <Card key={item._id} style={{ marginBottom: '20px' }} hoverable>
           <Row gutter={16}>
             {/* Course Title */}
@@ -55,7 +55,7 @@ const MySchedule = () => {
                 <Col span={12}>
                   <Text>Days: </Text>
                   {item.offeredCourse?.days ? (
-                    item.offeredCourse.days.map((day, index) => (
+                    item.offeredCourse.days.map((day: any, index : any) => (
                       <Tag key={index}>{day}</Tag>
                     ))
                   ) : (

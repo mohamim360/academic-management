@@ -72,7 +72,7 @@ const userManagementApi = baseApi.injectEndpoints({
         method: 'PATCH',
         body: { student },
       }),
-      async onQueryStarted({ id, student }, { dispatch, queryFulfilled }) {
+      async onQueryStarted({ id }, { dispatch, queryFulfilled }) {
         try {
           await queryFulfilled;
           dispatch(userManagementApi.util.invalidateTags([{ type: 'Student', id }]));
