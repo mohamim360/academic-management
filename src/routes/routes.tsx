@@ -8,6 +8,8 @@ import { facultyPaths } from './faculty.routes';
 import { studentPaths } from './student.routes';
 import ProtectedRoute from '../components/layout/ProtectedRoute';
 import ChangePassword from '../pages/ChangePassword';
+import ForgetPassword from '../pages/ForgetPassword';
+import ResetPassword from '../pages/ResetPassword';
 
 const router = createBrowserRouter([
   {
@@ -48,6 +50,13 @@ const router = createBrowserRouter([
   {
     path: '/change-password',
     element: <ChangePassword />,
+  },
+  {
+    path:"/forget-password",
+     element:<ForgetPassword />
+  },
+  {
+    path:"/reset-password/:token" ,element:<ResetPassword />
   },
   {
     path: '/register',

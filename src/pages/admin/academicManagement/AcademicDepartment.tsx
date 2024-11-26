@@ -4,10 +4,9 @@ import { TAcademicDepartment } from '../../../types/academicManagement.type';
 import { useState } from 'react';
 import { TQueryParam } from '../../../types';
 
-export type TTableData = Pick<
-  TAcademicDepartment,
-  'name' | 'academicFaculty'
->;
+export type TTableData = Pick<TAcademicDepartment, 'name'> & {
+  academicFaculty: string; // Change to string
+};
 
 const AcademicDepartment = () => {
   const [params, setParams] = useState<TQueryParam[] | undefined>(undefined);
@@ -19,20 +18,20 @@ const AcademicDepartment = () => {
 
   console.log({ isLoading, isFetching });
 
-  const tableData = departmentData?.data?.map(
+  const tableData: TTableData[] = departmentData?.data?.map(
     ({ _id, name, academicFaculty }) => ({
       key: _id,
       name,
-      academicFaculty: academicFaculty.name,
+      academicFaculty: academicFaculty.name, // Now valid
     })
-  );
+  ) || [];
 
   const columns: TableColumnsType<TTableData> = [
     {
       title: 'Department Name',
       key: 'name',
       dataIndex: 'name',
-      filters: departmentData?.data.map((dept) => ({
+      filters: departmentData?.data?.map((dept) => ({
         text: dept.name,
         value: dept.name,
       })),
@@ -41,7 +40,7 @@ const AcademicDepartment = () => {
       title: 'Faculty Name',
       key: 'academicFaculty',
       dataIndex: 'academicFaculty',
-      filters: departmentData?.data.map((dept) => ({
+      filters: departmentData?.data?.map((dept) => ({
         text: dept.academicFaculty.name,
         value: dept.academicFaculty.name,
       })),

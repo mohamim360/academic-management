@@ -6,10 +6,11 @@ type TInputProps = {
   name: string;
   label?: string;
   disabled?: boolean;
-  value?:string
+  value?: string;
+  onChange?: React.ChangeEventHandler<HTMLInputElement>; // Add onChange here
 };
 
-const PHInput = ({ type, name, label, disabled }: TInputProps) => {
+const PHInput = ({ type, name, label, disabled, onChange }: TInputProps) => {
   return (
     <div style={{ marginBottom: '20px' }}>
       <Controller
@@ -23,6 +24,10 @@ const PHInput = ({ type, name, label, disabled }: TInputProps) => {
               size="large"
               disabled={disabled}
               value={field.value || ''}
+              onChange={(e) => {
+                field.onChange(e);  // Keep react-hook-form's onChange functionality
+                if (onChange) onChange(e);  // Call the custom onChange passed as prop
+              }}
             />
           </Form.Item>
         )}

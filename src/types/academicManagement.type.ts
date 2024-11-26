@@ -19,9 +19,9 @@ export type TAcademicFaculty = {
 };
 
 export type TAcademicDepartment = {
-  _id: string;
+  _id: string ;
   name: string;
   academicFaculty: TAcademicFaculty;
   createdAt: string;
   updatedAt: string;
-};
+} ;

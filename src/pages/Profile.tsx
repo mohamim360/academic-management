@@ -1,10 +1,10 @@
-import React from 'react';
+
 import { Descriptions, Card, Row, Col } from 'antd';
 import { useSelector } from 'react-redux';
 import { selectCurrentUser } from '../redux/features/auth/authSlice';
 
 const Profile = () => {
-  const user = useSelector(selectCurrentUser); // Get user data from Redux
+  const user  = useSelector(selectCurrentUser); // Get user data from Redux
 
   return (
     <Row justify="center" style={{ marginTop: '50px' }}>
@@ -13,8 +13,6 @@ const Profile = () => {
           <Descriptions bordered column={1}>
             <Descriptions.Item label="User ID">{user?.userId}</Descriptions.Item>
             <Descriptions.Item label="Role">{user?.role}</Descriptions.Item>
-            <Descriptions.Item label="Issued At">{new Date(user?.iat * 1000).toLocaleString()}</Descriptions.Item>
-            <Descriptions.Item label="Expires At">{new Date(user?.exp * 1000).toLocaleString()}</Descriptions.Item>
           </Descriptions>
         </Card>
       </Col>
