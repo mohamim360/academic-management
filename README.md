@@ -198,6 +198,7 @@ The project is built using **React**, **TypeScript**, and **Vite**. The structur
 ## **ER Diagram Integration**
 This frontend application integrates with the backend using the provided **ER Diagram**, which defines the relationships between users, courses, semesters, and academic entities. All API interactions align with these relationships for seamless integration.
 
+![ER Diagram](./erdiagram.png)
 ---
 
 ## **Future Enhancements**
