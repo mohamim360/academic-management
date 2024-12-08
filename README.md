@@ -1,7 +1,55 @@
+# **Academic Management System (Frontend)**  
 
-# **Academic Management System (Frontend)**
+This repository contains the frontend implementation for the Academic Management System, designed to streamline workflows for **administrators**, **faculty**, and **students** in an educational institution. It enables role-based management for user and course administration, academic scheduling, and course registration.  
 
-This repository contains the frontend implementation for the Academic Management System, designed to streamline workflows for **administrators**, **faculty**, and **students** in an educational institution. It enables role-based management for user and course administration, academic scheduling, and course registration.
+---
+
+## **Table of Contents**  
+1. [Key Features](#key-features)  
+   - [Role-Based Access Control](#1-role-based-access-control)  
+   - [Comprehensive User Management](#2-comprehensive-user-management)  
+   - [Academic Structure Management](#3-academic-structure-management)  
+   - [Course and Semester Management](#4-course-and-semester-management)  
+   - [Dynamic UI Components](#5-dynamic-ui-components)  
+   - [State Management](#6-state-management)  
+   - [Secure Authentication](#7-secure-authentication)  
+
+2. [Installation and Setup](#installation-and-setup)  
+   - [Prerequisites](#prerequisites)  
+   - [Steps](#steps)  
+
+3. [Links](#links)  
+
+4. [Project Structure](#project-structure)  
+   - [Directory Overview](#directory-overview)  
+
+5. [Screenshots and Descriptions](#screenshots-and-descriptions)  
+   - [Login Page](#1-login-page)  
+   - [Dashboard](#2-dashboard)  
+   - [Semester Management](#3-semester-management)  
+   - [Faculty Management](#4-faculty-management)  
+   - [Department Management](#5-department-management)  
+   - [Student Management](#6-student-management)  
+   - [Semester Registration](#7-semester-registration)  
+   - [Create Course](#8-create-course)  
+   - [Offer Course](#9-offer-course)  
+
+6. [Usage](#usage)  
+   - [Authentication](#authentication)  
+   - [Admin Features](#admin-features)  
+   - [Faculty Features](#faculty-features)  
+   - [Student Features](#student-features)  
+
+7. [Core Technologies](#core-technologies)  
+
+8. [Important Files](#important-files)  
+   - [Entry Points](#entry-points)  
+   - [Pages](#pages)  
+   - [Redux](#redux)  
+
+9. [ER Diagram Integration](#er-diagram-integration)  
+
+10. [Future Enhancements](#future-enhancements)  
 
 ---
 
@@ -57,7 +105,7 @@ This repository contains the frontend implementation for the Academic Management
 ### **Steps**
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/mohamim360/academic-management-frontend.git
+   git clone https://github.com/mohamim360/academic-management
    cd academic-management-frontend
    ```
 
