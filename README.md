@@ -128,6 +128,126 @@ The project is built using **React**, **TypeScript**, and **Vite**. The structur
 
 ---
 
+
+## Screenshots and Descriptions
+
+### 1. **Login Page**
+The login page provides a secure and user-friendly interface for authentication. Users enter their credentials (username/email and password) to log in. Role-based redirects ensure users access the correct dashboard based on their privileges (Admin, Faculty, or Student).
+
+![Login Page](./login.PNG)  
+> **Key Features**:  
+> - Secure authentication using JSON Web Tokens (JWT).  
+> - Interactive form validation for better user experience.  
+> - Role-based routing post-login.  
+
+---
+
+### 2. **Dashboard**
+The dashboard serves as the central hub for the system, providing quick navigation to key features. Each user role (Admin, Faculty, and Student) has a customized dashboard layout tailored to their responsibilities.  
+
+![Dashboard](./dash.PNG)  
+> **Key Features**:  
+> - Displays summarized data, including notifications and action buttons.  
+> - Role-specific navigation menu (e.g., user management for admins).  
+> - Intuitive layout for a seamless user experience.  
+
+---
+
+### 3. **Semester Management**
+The semester management module allows administrators to create and manage semesters effectively. Admins can define semester durations, credit limits, and other academic settings.
+
+![Semester Management](./sem.PNG)  
+> **Key Features**:  
+> - Form-based interface to add or edit semesters.  
+> - Displays semester details like start/end dates and credit limits.  
+> - Easy navigation to manage semester registrations and course offerings.  
+
+![Semester Management 2](./vsem.PNG)  
+> **Additional Features**:  
+> - Lists all existing semesters with filtering and sorting options.  
+
+---
+
+### 4. **Faculty Management**
+This module allows administrators to manage faculty records, including their assigned courses and departments. It simplifies tracking and updating faculty-related information.  
+
+![Faculty Management](./fac.PNG)  
+> **Key Features**:  
+> - Intuitive form for adding new faculty members.  
+> - Allows assignment of roles, courses, and departments.  
+> - Real-time validation to avoid data entry errors.  
+
+![Faculty Management 2](./vfac.PNG)  
+> **Additional Features**:  
+> - Lists all registered faculty members with details.  
+  
+---
+
+### 5. **Department Management**
+The department management page enables administrators to oversee academic departments. Admins can add, update, or delete departments, ensuring organizational accuracy.
+
+![Department Management](./dep.PNG)  
+> **Key Features**:  
+> - Simple interface to add or edit department names.  
+> - Displays department details like faculty head and associated courses.  
+
+![Department Management 2](./vdep.PNG)  
+> **Additional Features**:  
+> - Comprehensive list of all departments with quick action buttons.  
+> - Search and filter functionalities for better management.  
+
+---
+
+### 6. **Student Management**
+The student management module provides an interface for adding and managing student details. Admins can assign students to specific departments and semesters, enabling accurate record-keeping.  
+
+![Student Management](./stu.PNG)  
+> **Key Features**:  
+> - User-friendly form for adding new students with validation checks.  
+> - Assign departments, semesters, and enrollment statuses.  
+
+![Student Management 2](./vstu.PNG)  
+> **Additional Features**:  
+> - Displays a list of all registered students with their academic details.  
+> - Includes options for editing and removing student records.  
+
+Here’s the updated **Screenshots and Descriptions** section with added details for **Semester Registration**, **Create Course**, and **Offer Course** modules as per the **ER Diagram**:
+
+
+### 7. **Semester Registration**
+The semester registration module enables students to register for courses offered in a specific semester. It integrates with the backend to ensure course prerequisites are met and credit limits are respected.
+
+![Semester Registration](./semr.PNG)  
+> **Key Features**:  
+> - Displays available courses for the selected semester.  
+> - Enforces credit limits and checks for prerequisites dynamically.  
+
+---
+
+### 8. **Create Course**
+The create course module allows administrators to define new courses with detailed metadata. Courses can include prerequisites, assigned faculties, and associated departments.
+
+![Create Course](./cou.PNG)  
+> **Key Features**:  
+> - Add course details, including course code, title, and credits.  
+> - Set prerequisites by selecting other courses from the system.  
+> - Assign faculties to courses and specify the target department.  
+> - Form validation ensures accurate data entry.  
+
+---
+
+### 9. **Offer Course**
+The offer course module allows administrators to make specific courses available for student registration in a semester. This links courses to a semester and manages faculty assignments.
+
+![Offer Course](./ocou.PNG)  
+> **Key Features**:  
+> - List of all courses available in the system.  
+> - Assign courses to a specific semester.  
+> - Link faculty members to the offered courses for tracking purposes.  
+
+---
+
+
 ## **Usage**
 
 ### **Authentication**
