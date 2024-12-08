@@ -32,7 +32,8 @@ This repository contains the frontend implementation for the Academic Management
    - [Student Management](#6-student-management)  
    - [Semester Registration](#7-semester-registration)  
    - [Create Course](#8-create-course)  
-   - [Offer Course](#9-offer-course)  
+   - [Offer Course](#9-offer-course)
+   - [Student Panel](#10-student-panel)
 
 6. [Usage](#usage)  
    - [Authentication](#authentication)  
@@ -298,8 +299,31 @@ The offer course module allows administrators to make specific courses available
 > - Assign courses to a specific semester.  
 > - Link faculty members to the offered courses for tracking purposes.  
 
+### 10. **Student Panel**
+
+The student panel provides a comprehensive view of enrolled courses, personalized schedules, and academic performance. This section ensures students can easily access their information and stay updated on their academic progress.
+
+#### **My Schedule**
+The "My Schedule" feature allows students to view their class schedule for the current semester. It provides details about course timings, instructors, and locations.
+
+![My Schedule](./sch.PNG)  
+> **Key Features**:  
+> - Displays a day-wise or weekly schedule of enrolled courses.  
+> - Shows course details, including time, location, and instructor name.  
+> - Helps students plan their academic and personal activities effectively.  
+
 ---
 
+#### **Course Marks**
+The "Course Marks" feature gives students access to their grades and progress in enrolled courses. It ensures transparency and allows students to track their academic performance throughout the semester.
+
+![Course Marks](./mark.PNG)  
+> **Key Features**:  
+> - Displays marks for assignments, quizzes, midterms, and final exams.  
+> - Shows overall grades and performance summaries for each course.  
+> - Integrated with backend APIs for real-time updates.  
+
+---
 
 ## **Usage**
 
