@@ -1,6 +1,7 @@
-# Frontend Application for Academic Management System
 
-This repository contains the frontend implementation for the Academic Management System. This system is designed to provide role-based management for **administrators**, **faculty**, and **students** in an educational institution. It enables streamlined workflows such as user and course management, academic scheduling, and course registration.
+# **Academic Management System (Frontend)**
+
+This repository contains the frontend implementation for the Academic Management System, designed to streamline workflows for **administrators**, **faculty**, and **students** in an educational institution. It enables role-based management for user and course administration, academic scheduling, and course registration.
 
 ---
 
@@ -46,6 +47,58 @@ This repository contains the frontend implementation for the Academic Management
 
 ---
 
+## **Installation and Setup**
+
+### **Prerequisites**
+- **Node.js**: Ensure Node.js (v16 or higher) is installed.
+- **Package Manager**: npm or yarn.
+- **Backend**: A running backend service (refer to the backend repository README for setup).
+
+### **Steps**
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/mohamim360/academic-management-frontend.git
+   cd academic-management-frontend
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Configure environment variables**:
+   Create a `.env` file in the root directory and add the following:
+   ```env
+   VITE_API_BASE_URL=https://academic-management-server.vercel.app/api
+   ```
+
+4. **Run the application**:
+   Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+5. **Build for production**:
+   ```bash
+   npm run build
+   ```
+
+6. **Lint and format code**:
+   To ensure clean and consistent code:
+   ```bash
+   npm run lint
+   ```
+
+---
+
+## **Links**
+
+- **Frontend Repository**: [GitHub Link](https://github.com/mohamim360/academic-management)  
+- **Backend Repository**: [GitHub Link](https://github.com/mohamim360/academic-management-server)  
+- **Server Live Application**: [Visit Here](https://academic-management-server.vercel.app/)  
+
+---
+
 ## **Project Structure**
 The project is built using **React**, **TypeScript**, and **Vite**. The structure is modular and follows best practices for scalability, making it easy to extend and maintain.
 
@@ -83,51 +136,6 @@ The project is built using **React**, **TypeScript**, and **Vite**. The structur
 - **`utils`**: Utility functions for common tasks like route generation and sidebar configuration.
 
 ---
-
-## **Installation and Setup**
-
-### **Prerequisites**
-- **Node.js**: Ensure Node.js (v16 or higher) is installed.
-- **Package Manager**: npm or yarn.
-- **Backend**: A running backend service (refer to the backend repository README for setup).
-
-### **Steps**
-1. **Clone the repository**:
-   ```bash
-   git clone <repository-url>
-   cd frontend
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Configure environment variables**:
-   Create a `.env` file in the root directory and add the following:
-   ```env
-   VITE_API_BASE_URL=http://localhost:5000/api
-   ```
-
-4. **Run the application**:
-   Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-5. **Build for production**:
-   ```bash
-   npm run build
-   ```
-
-6. **Lint and format code**:
-   To ensure clean and consistent code:
-   ```bash
-   npm run lint
-   ```
-
----
-
 
 ## Screenshots and Descriptions
 
@@ -210,9 +218,6 @@ The student management module provides an interface for adding and managing stud
 > **Additional Features**:  
 > - Displays a list of all registered students with their academic details.  
 > - Includes options for editing and removing student records.  
-
-Here’s the updated **Screenshots and Descriptions** section with added details for **Semester Registration**, **Create Course**, and **Offer Course** modules as per the **ER Diagram**:
-
 
 ### 7. **Semester Registration**
 The semester registration module enables students to register for courses offered in a specific semester. It integrates with the backend to ensure course prerequisites are met and credit limits are respected.
