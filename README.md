@@ -188,7 +188,7 @@ The project is built using **React**, **TypeScript**, and **Vite**. The structur
 ### 1. **Login Page**
 The login page provides a secure and user-friendly interface for authentication. Users enter their credentials (username/email and password) to log in. Role-based redirects ensure users access the correct dashboard based on their privileges (Admin, Faculty, or Student).
 
-![Login Page](./public/public/login.PNG)  
+![Login Page](./public/login.PNG)  
 > **Key Features**:  
 > - Secure authentication using JSON Web Tokens (JWT).  
 > - Interactive form validation for better user experience.  
