@@ -4,6 +4,13 @@ This repository contains the frontend implementation for the Academic Management
 
 ---
 
+## **Links**
+   
+- **Backend Repository**: [GitHub Link](https://github.com/mohamim360/academic-management-server)  
+- **Server Live Application**: [Visit Here](https://academic-management-server.vercel.app/)  
+
+---
+
 ## **Table of Contents**  
 1. [Key Features](#key-features)  
    - [Role-Based Access Control](#1-role-based-access-control)  
@@ -16,14 +23,12 @@ This repository contains the frontend implementation for the Academic Management
 
 2. [Installation and Setup](#installation-and-setup)  
    - [Prerequisites](#prerequisites)  
-   - [Steps](#steps)  
+   - [Steps](#steps)    
 
-3. [Links](#links)  
-
-4. [Project Structure](#project-structure)  
+3. [Project Structure](#project-structure)  
    - [Directory Overview](#directory-overview)  
 
-5. [Screenshots and Descriptions](#screenshots-and-descriptions)  
+4. [Screenshots and Descriptions](#screenshots-and-descriptions)  
    - [Login Page](#1-login-page)  
    - [Dashboard](#2-dashboard)  
    - [Semester Management](#3-semester-management)  
@@ -35,22 +40,22 @@ This repository contains the frontend implementation for the Academic Management
    - [Offer Course](#9-offer-course)
    - [Student Panel](#10-student-panel)
 
-6. [Usage](#usage)  
+5. [Usage](#usage)  
    - [Authentication](#authentication)  
    - [Admin Features](#admin-features)  
    - [Faculty Features](#faculty-features)  
    - [Student Features](#student-features)  
 
-7. [Core Technologies](#core-technologies)  
+6. [Core Technologies](#core-technologies)  
 
-8. [Important Files](#important-files)  
+7. [Important Files](#important-files)  
    - [Entry Points](#entry-points)  
    - [Pages](#pages)  
    - [Redux](#redux)  
 
-9. [ER Diagram Integration](#er-diagram-integration)  
+8. [ER Diagram Integration](#er-diagram-integration)  
 
-10. [Future Enhancements](#future-enhancements)  
+9. [Future Enhancements](#future-enhancements)  
 
 ---
 
@@ -140,14 +145,6 @@ This repository contains the frontend implementation for the Academic Management
 
 ---
 
-## **Links**
-
-- **Frontend Repository**: [GitHub Link](https://github.com/mohamim360/academic-management)  
-- **Backend Repository**: [GitHub Link](https://github.com/mohamim360/academic-management-server)  
-- **Server Live Application**: [Visit Here](https://academic-management-server.vercel.app/)  
-
----
-
 ## **Project Structure**
 The project is built using **React**, **TypeScript**, and **Vite**. The structure is modular and follows best practices for scalability, making it easy to extend and maintain.
 
@@ -191,7 +188,7 @@ The project is built using **React**, **TypeScript**, and **Vite**. The structur
 ### 1. **Login Page**
 The login page provides a secure and user-friendly interface for authentication. Users enter their credentials (username/email and password) to log in. Role-based redirects ensure users access the correct dashboard based on their privileges (Admin, Faculty, or Student).
 
-![Login Page](./login.PNG)  
+![Login Page](./public/public/login.PNG)  
 > **Key Features**:  
 > - Secure authentication using JSON Web Tokens (JWT).  
 > - Interactive form validation for better user experience.  
@@ -202,7 +199,7 @@ The login page provides a secure and user-friendly interface for authentication.
 ### 2. **Dashboard**
 The dashboard serves as the central hub for the system, providing quick navigation to key features. Each user role (Admin, Faculty, and Student) has a customized dashboard layout tailored to their responsibilities.  
 
-![Dashboard](./dash.PNG)  
+![Dashboard](./public/dash.PNG)  
 > **Key Features**:  
 > - Displays summarized data, including notifications and action buttons.  
 > - Role-specific navigation menu (e.g., user management for admins).  
@@ -213,13 +210,13 @@ The dashboard serves as the central hub for the system, providing quick navigati
 ### 3. **Semester Management**
 The semester management module allows administrators to create and manage semesters effectively. Admins can define semester durations, credit limits, and other academic settings.
 
-![Semester Management](./sem.PNG)  
+![Semester Management](./public/sem.PNG)  
 > **Key Features**:  
 > - Form-based interface to add or edit semesters.  
 > - Displays semester details like start/end dates and credit limits.  
 > - Easy navigation to manage semester registrations and course offerings.  
 
-![Semester Management 2](./vsem.PNG)  
+![Semester Management 2](./public/vsem.PNG)  
 > **Additional Features**:  
 > - Lists all existing semesters with filtering and sorting options.  
 
@@ -228,13 +225,13 @@ The semester management module allows administrators to create and manage semest
 ### 4. **Faculty Management**
 This module allows administrators to manage faculty records, including their assigned courses and departments. It simplifies tracking and updating faculty-related information.  
 
-![Faculty Management](./fac.PNG)  
+![Faculty Management](./public/fac.PNG)  
 > **Key Features**:  
 > - Intuitive form for adding new faculty members.  
 > - Allows assignment of roles, courses, and departments.  
 > - Real-time validation to avoid data entry errors.  
 
-![Faculty Management 2](./vfac.PNG)  
+![Faculty Management 2](./public/vfac.PNG)  
 > **Additional Features**:  
 > - Lists all registered faculty members with details.  
   
@@ -243,12 +240,12 @@ This module allows administrators to manage faculty records, including their ass
 ### 5. **Department Management**
 The department management page enables administrators to oversee academic departments. Admins can add, update, or delete departments, ensuring organizational accuracy.
 
-![Department Management](./dep.PNG)  
+![Department Management](./public/dep.PNG)  
 > **Key Features**:  
 > - Simple interface to add or edit department names.  
 > - Displays department details like faculty head and associated courses.  
 
-![Department Management 2](./vdep.PNG)  
+![Department Management 2](./public/vdep.PNG)  
 > **Additional Features**:  
 > - Comprehensive list of all departments with quick action buttons.  
 > - Search and filter functionalities for better management.  
@@ -258,12 +255,12 @@ The department management page enables administrators to oversee academic depart
 ### 6. **Student Management**
 The student management module provides an interface for adding and managing student details. Admins can assign students to specific departments and semesters, enabling accurate record-keeping.  
 
-![Student Management](./stu.PNG)  
+![Student Management](./public/stu.PNG)  
 > **Key Features**:  
 > - User-friendly form for adding new students with validation checks.  
 > - Assign departments, semesters, and enrollment statuses.  
 
-![Student Management 2](./vstu.PNG)  
+![Student Management 2](./public/vstu.PNG)  
 > **Additional Features**:  
 > - Displays a list of all registered students with their academic details.  
 > - Includes options for editing and removing student records.  
@@ -271,7 +268,7 @@ The student management module provides an interface for adding and managing stud
 ### 7. **Semester Registration**
 The semester registration module enables students to register for courses offered in a specific semester. It integrates with the backend to ensure course prerequisites are met and credit limits are respected.
 
-![Semester Registration](./semr.PNG)  
+![Semester Registration](./public/semr.PNG)  
 > **Key Features**:  
 > - Displays available courses for the selected semester.  
 > - Enforces credit limits and checks for prerequisites dynamically.  
@@ -281,7 +278,7 @@ The semester registration module enables students to register for courses offere
 ### 8. **Create Course**
 The create course module allows administrators to define new courses with detailed metadata. Courses can include prerequisites, assigned faculties, and associated departments.
 
-![Create Course](./cou.PNG)  
+![Create Course](./public/cou.PNG)  
 > **Key Features**:  
 > - Add course details, including course code, title, and credits.  
 > - Set prerequisites by selecting other courses from the system.  
@@ -293,7 +290,7 @@ The create course module allows administrators to define new courses with detail
 ### 9. **Offer Course**
 The offer course module allows administrators to make specific courses available for student registration in a semester. This links courses to a semester and manages faculty assignments.
 
-![Offer Course](./ocou.PNG)  
+![Offer Course](./public/ocou.PNG)  
 > **Key Features**:  
 > - List of all courses available in the system.  
 > - Assign courses to a specific semester.  
@@ -306,7 +303,7 @@ The student panel provides a comprehensive view of enrolled courses, personalize
 #### **My Schedule**
 The "My Schedule" feature allows students to view their class schedule for the current semester. It provides details about course timings, instructors, and locations.
 
-![My Schedule](./sch.PNG)  
+![My Schedule](./public/sch.PNG)  
 > **Key Features**:  
 > - Displays a day-wise or weekly schedule of enrolled courses.  
 > - Shows course details, including time, location, and instructor name.  
@@ -317,7 +314,7 @@ The "My Schedule" feature allows students to view their class schedule for the c
 #### **Course Marks**
 The "Course Marks" feature gives students access to their grades and progress in enrolled courses. It ensures transparency and allows students to track their academic performance throughout the semester.
 
-![Course Marks](./mark.PNG)  
+![Course Marks](./public/mark.PNG)  
 > **Key Features**:  
 > - Displays marks for assignments, quizzes, midterms, and final exams.  
 > - Shows overall grades and performance summaries for each course.  
@@ -395,7 +392,7 @@ The "Course Marks" feature gives students access to their grades and progress in
 ## **ER Diagram Integration**
 This frontend application integrates with the backend using the provided **ER Diagram**, which defines the relationships between users, courses, semesters, and academic entities. All API interactions align with these relationships for seamless integration.
 
-![ER Diagram](./erdiagram.png)
+![ER Diagram](./public/erdiagram.png)
 ---
 
 ## **Future Enhancements**
